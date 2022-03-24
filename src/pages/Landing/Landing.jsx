@@ -9,6 +9,7 @@ const Landing = () => {
       <Link to="/the-board-game-things">Will's Things</Link><br/>
       <Link to="/the-well-styled-things">David's Things</Link><br/>
       <Link to="/the-animal-things">Zack's Things</Link><br/>
+      <Link to="/the-isaac-things">Isaac's Things</Link><br/>
     </>
   )
 }

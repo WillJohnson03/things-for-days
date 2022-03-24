@@ -6,6 +6,7 @@ import BoardGameThings from './pages/BoardGameThings/BoardGameThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import AnimalThings from './pages/AnimalThings/AnimalThings'
 import Landing from './pages/Landing/Landing'
+import IsaacThings from './pages/IsaacThings/IsaacThings'
 
 const App = () => {
   const [willsThings, setWillsThings] = useState([
@@ -130,6 +131,9 @@ const App = () => {
         path="/the-animal-things"
         element={<AnimalThings things={zacksThings} />}
       />
+      <Route 
+      path='/the-isaac-things'
+      element={<IsaacThings things={isaacThings}/>} />
     </Routes>
   )
 }
