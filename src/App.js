@@ -49,44 +49,39 @@ const App = () => {
     },
   ])
 
-  const [bensThings, setBensThings] = useState([
+  const [wolfsThings, setWolfThings] = useState([
     {
-      name: 'banana',
+      name: 'Maw',
       image:
-        'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        'https://i.imgur.com/XOIRHjD.jpg',
       attributes: [
-        'potassium-rich',
-        'yellow when good',
-        'not a taco',
-        'ring ring ring ring ring ring ring',
+        'Pointy',
+        'Wet',
+        'Moist',
+        '😳',
       ],
     },
     {
-      name: 'turkey',
+      name: 'Tail',
       image:
-        'https://images.unsplash.com/photo-1560011961-4ab41261de01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+        'https://i.imgur.com/iMWgztF.jpg',
       attributes: [
-        'such gobbles',
-        'good when stuffed',
-        'not a taco',
-        'why gravy exists',
+        'Soft',
+        'Floofy',
+        'Long',
+        '😱'
       ],
     },
     {
-      name: 'taco',
+      name: 'Paw',
       image:
-        'https://images.unsplash.com/photo-1545093149-618ce3bcf49d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80',
+        'https://i.imgur.com/g6yow5o.jpg',
       attributes: [
-        'yummy in my tummy',
-        'salsas may vary',
-        'definitely a taco',
-        'very edible',
+        'Beans',
+        'Stronk',
+        'Squishy',
+        '😵‍💫',
       ],
-    },
-    {
-      name: 'linux',
-      image: 'https://i.imgur.com/3BmfSOA.png',
-      attributes: ['not a taco', 'not Windows', 'not macOS', 'Penguins?'],
     },
   ])
 
@@ -139,7 +134,7 @@ const App = () => {
       />
       <Route
         path="/the-manliest-things"
-        element={<ManliestThings things={bensThings} />}
+        element={<ManliestThings things={wolfsThings} />}
       />
       <Route
         path="/the-well-styled-things"
