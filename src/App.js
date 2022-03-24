@@ -4,7 +4,7 @@ import './App.css'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
-import SillyThings from './pages/SillyThings/SIllyThings'
+import AnimalThings from './pages/AnimalThings/AnimalThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -121,12 +121,18 @@ const App = () => {
     },
   ])
 
-  const [erinsThings, setErinsThings] = useState([
+  const [zacksThings, setZacksThings] = useState([
     {
-      name: "dnd",
-      image: "https://i.imgur.com/NicF3Yr.png",  
-      attributes: ["dice", "monsters", "swords", "beautiful", "not a taco"],
+      name: "dog",
+      image: "https://media-be.chewy.com/wp-content/uploads/2021/05/27135654/Shiba-Inu_FeaturedImage.jpg",  
+      attributes: ["cute", "spicy", "medium", "amazing", "not food"],
     },
+    {
+      name: "rat",
+      image: "https://www.vancouverwildlife.com/images/splash/4x3/rats.jpg",
+      attributes: ["also cute", "sweet", "tiny",
+    "big ears"]
+    }
   ])
 
   return (
@@ -146,8 +152,8 @@ const App = () => {
         element={<StyledThings things={davidsThings} />}
       />
       <Route
-        path="/the-silly-things"
-        element={<SillyThings things={erinsThings} />}
+        path="/the-animal-things"
+        element={<AnimalThings things={zacksThings} />}
       />
     </Routes>
   )
