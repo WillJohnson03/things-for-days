@@ -4,7 +4,7 @@ import './App.css'
 import ManliestThings from './pages/ManliestThings/ManliestThings'
 import BoardGameThings from './pages/BoardGameThings/BoardGameThings'
 import StyledThings from './pages/StyledThings/StyledThings'
-import SillyThings from './pages/SillyThings/SIllyThings'
+import AnimalThings from './pages/AnimalThings/AnimalThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -16,64 +16,59 @@ const App = () => {
     },
   ])
 
-  const [bensThings, setBensThings] = useState([
+  const [wolfsThings, setWolfThings] = useState([
     {
-      name: 'banana',
+      name: 'Maw',
       image:
-        'https://images.unsplash.com/photo-1587132137056-bfbf0166836e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        'https://i.imgur.com/XOIRHjD.jpg',
       attributes: [
-        'potassium-rich',
-        'yellow when good',
-        'not a taco',
-        'ring ring ring ring ring ring ring',
+        'Pointy',
+        'Wet',
+        'Moist',
+        '😳',
       ],
     },
     {
-      name: 'turkey',
+      name: 'Tail',
       image:
-        'https://images.unsplash.com/photo-1560011961-4ab41261de01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+        'https://i.imgur.com/iMWgztF.jpg',
       attributes: [
-        'such gobbles',
-        'good when stuffed',
-        'not a taco',
-        'why gravy exists',
+        'Soft',
+        'Floofy',
+        'Long',
+        '😱'
       ],
     },
     {
-      name: 'taco',
+      name: 'Paw',
       image:
-        'https://images.unsplash.com/photo-1545093149-618ce3bcf49d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80',
+        'https://i.imgur.com/g6yow5o.jpg',
       attributes: [
-        'yummy in my tummy',
-        'salsas may vary',
-        'definitely a taco',
-        'very edible',
+        'Beans',
+        'Stronk',
+        'Squishy',
+        '😵‍💫',
       ],
-    },
-    {
-      name: 'linux',
-      image: 'https://i.imgur.com/3BmfSOA.png',
-      attributes: ['not a taco', 'not Windows', 'not macOS', 'Penguins?'],
     },
   ])
 
   const [davidsThings, setDavidsThings] = useState([
     {
-      name: 'waffle',
+      name: 'French Toast',
       image:
-        'https://images.unsplash.com/photo-1568051243851-f9b136146e97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80',
+        'https://i.imgur.com/4dDeMhc.jpeg',
       attributes: ['tasty', 'fluffy', 'breakfast', 'yummy'],
     },
     {
-      name: 'giraffe',
+      name: 'Horses',
       image:
-        'https://images.unsplash.com/photo-1538127426967-75a6c73f6d20?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+        'https://i.imgur.com/5TzUr1B.gif',
       attributes: [
-        'tall',
+        'Weapon to use against Ben',
         'cool',
         'fun',
         'animal',
-        "(David doesn't acually own a giraffe)",
+        "Battle ready",
       ],
     },
     {
@@ -82,18 +77,24 @@ const App = () => {
       attributes: ['fluffy', 'happy', 'sleepy', 'dumb'],
     },
     {
-      name: 'Poptart®',
-      image: 'https://i.imgur.com/q9zgcaP.jpg',
-      attributes: ['pastry?', 'food?', 'edible?', 'Horrible when toasted!'],
+      name: 'Toaster strudel',
+      image: 'https://i.imgur.com/PP4sN8R.jpeg',
+      attributes: ['pastry?', 'food?', 'edible?', 'Amazing when toasted!'],
     },
   ])
 
-  const [erinsThings, setErinsThings] = useState([
+  const [zacksThings, setZacksThings] = useState([
     {
-      name: "dnd",
-      image: "https://i.imgur.com/NicF3Yr.png",  
-      attributes: ["dice", "monsters", "swords", "beautiful", "not a taco"],
+      name: "dog",
+      image: "https://media-be.chewy.com/wp-content/uploads/2021/05/27135654/Shiba-Inu_FeaturedImage.jpg",  
+      attributes: ["cute", "spicy", "medium", "amazing", "not food"],
     },
+    {
+      name: "rat",
+      image: "https://www.vancouverwildlife.com/images/splash/4x3/rats.jpg",
+      attributes: ["also cute", "sweet", "tiny",
+    "big ears"]
+    }
   ])
 
   return (
@@ -106,15 +107,15 @@ const App = () => {
       />
       <Route
         path="/the-manliest-things"
-        element={<ManliestThings things={bensThings} />}
+        element={<ManliestThings things={wolfsThings} />}
       />
       <Route
         path="/the-well-styled-things"
         element={<StyledThings things={davidsThings} />}
       />
       <Route
-        path="/the-silly-things"
-        element={<SillyThings things={erinsThings} />}
+        path="/the-animal-things"
+        element={<AnimalThings things={zacksThings} />}
       />
     </Routes>
   )

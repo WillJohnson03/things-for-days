@@ -2,10 +2,10 @@ import ThingCard from '../../components/ThingCard/ThingCard'
 
 import { Link } from 'react-router-dom'
 
-const SillyThings = (props) => {
+const AnimalThings = (props) => {
   return (
     <>
-      <h1>Erin's Things</h1>
+      <h1>Zack's Things</h1>
       <Link to="/">Home</Link>
 
       {props.things.map((thing, idx) => 
@@ -15,4 +15,4 @@ const SillyThings = (props) => {
   )
 }
  
-export default SillyThings
+export default AnimalThings
