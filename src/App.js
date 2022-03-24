@@ -96,6 +96,19 @@ const App = () => {
     "big ears"]
     }
   ])
+  
+  const  [isaacThings, setIsaacThings] =useState([
+    {
+      name: 'bear',
+      image: 'https://i.imgur.com/eCD3nll.gif',
+      attributes: ['big', 'can ride a motorcycle', 'can run fast']
+    },
+    {
+      name:'Burgers',
+      image: 'https://i.imgur.com/zlOens4.jpeg',
+      attributes: ['bacon!!', 'juicy!']
+    }
+  ])
 
   return (
     <Routes>
