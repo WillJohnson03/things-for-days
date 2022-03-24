@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const FunctionalThings = (props) => {
   return (
     <>
-      <h1>Shahzad's Things</h1>
+      <h1>Will's Things</h1>
       <Link to="/">Home</Link>
 
       {props.things.map((thing, idx) => 
