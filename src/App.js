@@ -92,21 +92,21 @@ const App = () => {
 
   const [davidsThings, setDavidsThings] = useState([
     {
-      name: 'waffle',
+      name: 'French Toast',
       image:
-        'https://images.unsplash.com/photo-1568051243851-f9b136146e97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80',
+        'https://i.imgur.com/4dDeMhc.jpeg',
       attributes: ['tasty', 'fluffy', 'breakfast', 'yummy'],
     },
     {
-      name: 'giraffe',
+      name: 'Horses',
       image:
-        'https://images.unsplash.com/photo-1538127426967-75a6c73f6d20?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
+        'https://i.imgur.com/5TzUr1B.gif',
       attributes: [
-        'tall',
+        'Weapon to use against Ben',
         'cool',
         'fun',
         'animal',
-        "(David doesn't acually own a giraffe)",
+        "Battle ready",
       ],
     },
     {
@@ -115,9 +115,9 @@ const App = () => {
       attributes: ['fluffy', 'happy', 'sleepy', 'dumb'],
     },
     {
-      name: 'Poptart®',
-      image: 'https://i.imgur.com/q9zgcaP.jpg',
-      attributes: ['pastry?', 'food?', 'edible?', 'Horrible when toasted!'],
+      name: 'Toaster strudel',
+      image: 'https://i.imgur.com/PP4sN8R.jpeg',
+      attributes: ['pastry?', 'food?', 'edible?', 'Amazing when toasted!'],
     },
   ])
 
